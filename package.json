@@ -1,0 +1,21 @@
+{
+  "name": "kommandant-zentrale",
+  "version": "1.0.0",
+  "description": "Bot de Discord para gerenciamento do servidor principal do Tocka's Nest.",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node --project tsconfig.json src/index.ts",
+    "install::global": "npm i -g ts-node typescript"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20"
+  }
+}
