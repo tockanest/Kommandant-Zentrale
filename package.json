@@ -1,21 +1,56 @@
 {
-  "name": "kommandant-zentrale",
-  "version": "1.0.0",
-  "description": "Bot de Discord para gerenciamento do servidor principal do Tocka's Nest.",
-  "main": "index.js",
-  "scripts": {
-    "start": "ts-node --project tsconfig.json src/index.ts",
-    "install::global": "npm i -g ts-node typescript"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "discord.js": "^14.14.1",
-    "dotenv": "^16.4.5",
-    "mongoose": "^8.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.20"
-  }
+    "name": "kommandantzentrale",
+    "version": "1.0.0",
+    "description": "A bot that does a lot of things (A lot more than I'd like to maintain lol)",
+    "main": "dist/src/index.js",
+    "scripts": {
+        "start": "node dist/src/index.js",
+        "nodemon": "npm run prerun && nodemon",
+        "prerun": "ts-node-esm --project ./tsconfig.json --files scripts/prerun.ts",
+        "dev": "ts-node-esm --project ./tsconfig.json --files src/index.ts"
+    },
+    "keywords": [],
+    "type": "module",
+    "author": "Nixyan",
+    "license": "AGPL-3.0",
+    "dependencies": {
+        "@twurple/auth": "^7.1.0",
+        "@twurple/chat": "^7.1.0",
+        "discord.js": "^14.14.1",
+        "dotenv": "^16.4.5",
+        "fastify": "^4.26.2",
+        "mongoose": "^8.3.3",
+        "ws": "^8.17.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.12.8",
+        "nodemon": "^3.1.0"
+    },
+    "nodemonConfig": {
+        "ignore": [
+            "node_modules",
+            "dist"
+        ],
+        "watch": [
+            "src",
+            "types",
+            "modules",
+            "package.json"
+        ],
+        "ext": "ts,json",
+        "exec": "npm run dev",
+        "execMap": {
+            "ts": "ts-node"
+        },
+        "verbose": true,
+        "execOptions": {
+            "env": {
+                "NODE_ENV": "development"
+            }
+        }
+    },
+    "optionalDependencies": {
+        "bufferutil": "^4.0.8",
+        "bufferutilnpm": "*"
+    }
 }

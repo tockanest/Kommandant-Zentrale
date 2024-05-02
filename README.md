@@ -10,9 +10,7 @@
 
 <h3 align="start">📖 About</h3>
 
-This repository is the source code for the Kommandant Zentrale discord bot.
-
-This will be a collaboration between me (Tocka) and a friend of mine (Pedro).
+This repository is the source code for the Kommandant Zentrale discord bot. This bot is being developed by Tocka Nest.
 
 This is a work in progress, should not be used in production. But you do you.
 
@@ -27,8 +25,11 @@ This project was/is being built with the following technologies:
 - [Discord.js](https://discord.js.org/)
 - [MongoDB](https://www.mongodb.com/)
 - [Mongoose](https://mongoosejs.com/)
+- [Dotenv](https://www.npmjs.com/package/dotenv)
+- [Fastify](https://www.fastify.io/)
+- [Twurple](https://twurple.js.org/)
 
-In total, this project uses five different technologies to make it work.
+In total, this project uses 6 libraries and 3 Technologies.
 
 This might grow in the future.
 
@@ -55,30 +56,16 @@ npm run install::global
 
 <h3 align="start">🔨 To Work On</h3>
 
-- [ ] Create the main Event Handler.
-- [ ] Create the main Command Handler.
-- [ ] Create the main Database Handler.
+- [X] Create the main Event Handler.
+- [X] Create the main Command Handler.
+- [X] Create the main Database Handler.
 - [ ] Create the commands.
-
-This project needs to follow the following structure:
-
-```structures
-root/
-    src/
-        commands/
-            [WIP]
-        configs/
-            events/
-                eventHandler.ts
-            commands/
-                commandHandler.ts
-            database/
-                schemas/
-                databaseHandler.ts
-        index.ts
-    .env
-    .gitignore
-    package.json
-    tsconfig.json
-    README.md
-```
+- [ ] Finish integrations.
+-
+    - [ ] Finish Twitch integration.
+-
+    - [ ] Start Youtube integration.
+-
+    - [ ] Start Twitter integration.
+- [ ] Create a dashboard.
+- [ ] Test everything and fix bugs.
