@@ -5,7 +5,7 @@ interface IUser {
     username: string;
     language: string;
     twitch?: {
-        streamer: {
+        streamer?: {
             id: string;
             username: string;
             token: string;
@@ -51,7 +51,6 @@ const userSchema = new Schema<IUser>({
                 viewStreak: {type: Number, required: false}
             }
         }]
-
     }
 });
 

@@ -48,6 +48,18 @@ function getImportName(relativePath: string): string {
             folderName.charAt(0).toUpperCase() + folderName.slice(1)
         }`;
     }
+    
+    // If fileName has "-" in it, we need to convert it to camelCase
+    if(fileName.includes("-")) {
+        const splitFileName = fileName.split("-");
+        return splitFileName.map((word, index) => {
+            if (index === 0) {
+                return word;
+            }
+            return word.charAt(0).toUpperCase() + word.slice(1);
+        }).join("");
+    }
+    
     return fileName;
 }
 

@@ -13,14 +13,14 @@ const translationsData: TranslationsExport = {
                 "epo": "Mi ne povis trovi vin en mia datumbazo. {ADDITIONAL INFO}"
             }
         },
-        "configuration": {
+        configuration: {
             "invalidSubCommand": {
                 "en-US": "Invalid SubCommand",
                 "pt-BR": "SubComando Inválido",
                 "epo": "Nevalida Subkomando"
             }
         },
-        "memberCount": {
+        memberCount: {
             "notConfigured": {
                 "en-US": "This guild does not have a member count channel configured. Please check that.",
                 "pt-BR": "Este servidor não tem um canal de contagem de membros configurado. Por favor, verifique isso.",
@@ -71,9 +71,9 @@ const translationsData: TranslationsExport = {
                 "pt-BR": "Um erro inesperado ocorreu enquanto o processo de remoção do contador ocorria: **{ERROR}**",
                 "epo": "Eraro okazis dum forigante la membro nombro kanalo: **{ERROR}**"
             }
-
+            
         },
-        "streamerRegister": {
+        streamerRegister: {
             "embed-title-default": {
                 "en-US": "Streamer Registration",
                 "pt-BR": "Registro de Streamer",
@@ -108,6 +108,38 @@ const translationsData: TranslationsExport = {
                 "en-US": "Hey {USERNAME} you are already registered as a streamer. If you want to update your information please use the command `/streamer update`.",
                 "pt-BR": "Olá {USERNAME} você já está registrado como um streamer. Se deseja atualizar suas informações por favor utilize o comando `/streamer update`.",
                 "epo": "Saluton {USERNAME} vi jam estas registrita kiel fluigisto. Se vi volas ĝisdatigi vian informon bonvolu uzi la komandon `/streamer update`."
+            }
+        },
+        streamerUnregister: {
+            "embed-title-default": {
+                "en-US": "Streamer Unregister",
+                "pt-BR": "Desregistro de Streamer",
+                "epo": "Fluigisto Malregistriĝo"
+            },
+            "embed-description-warning": {
+                "en-US": "Hey {USERNAME} you are about to unregister as a streamer. Are you sure you want to continue?\nBy doing so, you will only unregister as a streamer and every viewer will also be unregistered. Which means you will have to set up everything again, including (but not limited to) rewards, economy gains and others. All viewers will also need to register again to receive rewards.",
+                "pt-BR": "Olá {USERNAME} você está prestes a se desregistrar como um streamer. Tem certeza de que deseja continuar?\nAo fazer isso, você só se desregistrará como um streamer e todos os espectadores também serão desregistrados. O que significa que você terá que configurar tudo novamente, incluindo (mas não limitado a) recompensas, ganhos de economia e outros. Todos os espectadores também precisarão se registrar novamente para receber recompensas.",
+                "epo": "Saluton {USERNAME} vi estas proksima malregistriĝi kiel fluigisto. Ĉu vi certas ke vi volas daŭrigi?\nPer tio, vi nur malregistriĝos kiel fluigisto kaj ĉiu spektanto ankaŭ estos malregistrita. Kio signifas ke vi devos reagordi ĉion denove, inkluzive (sed ne limigite al) rekompensoj, ekonomiaj gajnoj kaj aliaj. Ĉiuj spektantoj ankaŭ devos registri denove por ricevi rekompensojn."
+            },
+            "embed-description-success": {
+                "en-US": "Hey {USERNAME} you have successfully unregistered as a streamer. If you want to register again please use the command `/streamer register`.",
+                "pt-BR": "Olá {USERNAME} você desregistrou com sucesso como um streamer. Se deseja se registrar novamente por favor utilize o comando `/streamer register`.",
+                "epo": "Saluton {USERNAME} vi sukcese malregistriĝis kiel fluigisto. Se vi volas registri denove bonvolu uzi la komandon `/streamer register`."
+            },
+            "embed-description-not-registered": {
+                "en-US": "Hey {USERNAME} you are not registered as a streamer. If you want to register please use the command `/streamer register`.",
+                "pt-BR": "Olá {USERNAME} você não está registrado como um streamer. Se deseja se registrar por favor utilize o comando `/streamer register`.",
+                "epo": "Saluton {USERNAME} vi ne estas registrita kiel fluigisto. Se vi volas registri bonvolu uzi la komandon `/streamer register`."
+            },
+            "button-cancel": {
+                "en-US": "Cancel",
+                "pt-BR": "Cancelar",
+                "epo": "Nuligi"
+            },
+            "button-continue": {    
+                "en-US": "Continue",
+                "pt-BR": "Continuar",
+                "epo": "Daŭrigi"
             }
         }
     },
